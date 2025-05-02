@@ -1,11 +1,14 @@
 # Multi-Lingual Hateful Meme Detection
 
-<div align="center">
-  <video width="100%" controls>
-    <source src="./demo_video/Multi-Lingual Hateful Meme Detection Demo Video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+<p align="center">
+  <a href="./demo_video/Multi-Lingual Hateful Meme Detection Demo Video.mp4">
+    <img src="https://img.shields.io/badge/Watch%20Demo-Video-red?style=for-the-badge&logo=github" alt="Watch Demo Video" width="220">
+  </a>
+  <br>
+  <em>📹 A comprehensive demonstration of the multi-lingual hateful meme detection system</em>
+  <br>
+  <em>⏱️ Duration: 5 minutes</em>
+</p>
 
 ## Project Overview
 
