@@ -1,5 +1,7 @@
 # Multi-Lingual Hateful Meme Detection
 
+[![Demo Video](https://img.shields.io/badge/Watch-Demo_Video-red?style=for-the-badge&logo=github)](./demo_video/Multi-Lingual%20Hateful%20Meme%20Detection%20Demo%20Video.mp4)
+
 ## Project Overview
 
 This project addresses the growing challenge of detecting hateful memes across multiple languages on social media platforms. Hateful memes combine text and images to convey offensive messages that target individuals or groups based on characteristics such as race, gender, ethnicity, and religion. The detection of such content requires advanced multimodal analysis techniques that can interpret both visual and textual elements simultaneously.
@@ -9,6 +11,8 @@ This project addresses the growing challenge of detecting hateful memes across m
 - [Problem Statement](#problem-statement)
 - [Dataset](#dataset)
 - [Architecture](#architecture)
+- [Demo Video](#demo-video)
+- [Setup](#setup)
 - [Methodology](#methodology)
   - [Pipeline-1: Multi-Modal Feature Extraction and Analysis](#pipeline-1-multi-modal-feature-extraction-and-analysis)
   - [Pipeline-2: Advanced Model Training and Ensemble Classification](#pipeline-2-advanced-model-training-and-ensemble-classification)
@@ -59,6 +63,85 @@ This pipeline focuses on extracting and processing features from both textual an
 This pipeline leverages the rich feature set created in Pipeline-1 to train multiple specialized models that are then combined through ensemble learning techniques:
 
 ![Advanced Model Training and Ensemble Classification Pipeline](/Model%20Architecture%20Diagram/P_2.png)
+
+## Demo Video
+
+A demonstration video showcasing the system's capabilities is available below:
+
+<p align="center">
+  <a href="./demo_video/Multi-Lingual Hateful Meme Detection Demo Video.mp4">
+    <img src="https://img.shields.io/badge/Watch%20Demo-Video-red?style=for-the-badge&logo=github" alt="Watch Demo Video" width="220">
+  </a>
+</p>
+
+The video demonstrates:
+- System setup and requirements
+- Processing of sample memes across multiple languages
+- Feature extraction visualization
+- Real-time classification of hateful vs. non-hateful content
+- Performance analysis and model comparison
+- Explanation of prediction outcomes
+
+To run the demo yourself, follow the installation instructions in the [Viewing the Demo Video](#Viewing the Demo Video) section.
+
+### Viewing the Demo Video
+
+The demo video is stored directly in this repository. There are several ways to view it:
+
+1. **Click the badge above** to open the video file in GitHub's media viewer
+2. **Clone the repository** and open the video file locally:
+   ```bash
+   git clone https://github.com/blackhat-coder21/Multi-Lingual-Hateful-Meme-Detection.git
+   cd Multi-Lingual-Hateful-Meme-Detection/demo_video
+   # Open Multi-Lingual Hateful Meme Detection Demo Video.mp4 with your video player
+   ```
+3. **Download just the video** by navigating to the demo directory in the GitHub repository and clicking on the video file, then clicking the "Download" button
+
+To run the demo yourself, follow the installation instructions in the [Setup](#setup) section.
+
+## Setup
+
+### Requirements
+```
+python>=3.8
+torch>=1.9.0
+transformers>=4.12.0
+deepface>=0.0.79
+pillow>=8.3.1
+opencv-python>=4.5.3
+numpy>=1.20.0
+pandas>=1.3.0
+scikit-learn>=0.24.2
+matplotlib>=3.4.3
+seaborn>=0.11.2
+```
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/blackhat-coder21/Multi-Lingual-Hateful-Meme-Detection.git
+cd Multi-Lingual-Hateful-Meme-Detection
+
+# Create and activate a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run Streamlit UI
+streamlit run app.py
+```
+
+### Running the System
+```bash
+# For training the models run each code in kaggle save and download the model 
+
+# For evaluation run the ensemble model code
+
+# For inference on new memes now run
+streamlit run app.py
+```
 
 ## Methodology
 
